@@ -9,11 +9,13 @@ $(function () {
         + "&APPID=" + APIKEY
 
     let promise = $.getJSON(reqString)
-    .done(function() {
-
+    .done(function(data) {
+        $("#WeatherData").html("London "+ )
     })
-    .fail(function() {
-
+    .fail(function(message) {
+        $("WeatherError")
+        .toggle()
+        .html(message)
     })
     .al
 
