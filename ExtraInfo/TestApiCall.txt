@@ -1,0 +1,2 @@
+Metric api test
+https://api.openweathermap.org/data/2.5/weather/?id=2643743&units=metric&APPID=f2bc5fd358ea3bd542e898f165275606
