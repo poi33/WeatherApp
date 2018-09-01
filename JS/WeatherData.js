@@ -27,7 +27,7 @@ $(function () {
             return;
         }
         SetWeatherData();
-    }, 1000 * 30);
+    }, 1000 * 60);
 });
 
 /* Search weathercontent blockid. Creates a new one if it cant find it */
