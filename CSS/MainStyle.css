@@ -1,49 +1,115 @@
 
-html {
+body {
+    padding-top: 50px;
+    background: linear-gradient(rgb(255, 255, 255) 90%, rgb(179, 225, 255));
+    min-width: 350px;
+    min-height: 100vh;
     font-size: 16px;
 }
 
-body {
-    background: linear-gradient(rgb(255, 255, 255) 60%, rgb(216, 230, 255));
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 30%;
-    min-height: 100vh;
+header {
+    display: block;
+    padding: 1em 10%;
 }
 
-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: block;
-}
 header h1 {
     display: block;
     font-size: 3em;
 }
 
 .Main {
-    padding: 1em;
-    border: 2px solid black;
-    height: 300px;
+    padding: 0 10%;
+    display: inline-block;
+    border-radius: 2px;
+    margin-bottom: 2em;
+}
+
+#WeatherContent {
+    margin-bottom: 2em;
 }
 
 .WeatherBlock {
-    display: inline-blocK;
-    width: 150px;
-    height: 150px;
-    border: 5px solid black;
+    display: block;
+    width: 500px;
+    min-height: 100px;
+    border-radius: 2px;
+    border: 1px solid rgb(25, 58, 103);
+    color: black;
     padding: 0 0.5em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.WeatherBlock .City {
+    height: 100%;
+    font-size: 1.2em;
+}
+
+.WeatherBlock .City div {
+    display: inline-block;
+}
+
+.WeatherBlock h2 {
+    display: inline-block;
+    padding-top: 25px;
+    vertical-align: top;
+    font-size: 1.5em;
+    height: 100%;
+    width: 120px;
+    text-align: right;
 }
 
 .WeatherBlock .WeatherIcon {
+    display: inline-block;
+    margin-top: 20px;
     width: 50px;
     height: 50px;
 }
 
-.WeatherBlock h1 {
-    font-size: 2em;
+.WeatherBlock .Text {
+    vertical-align: top;
+}
+
+.WeatherBlock .Temperature {
+    padding-top: 1.3em;
+    font-size: 1.2em;
+    width: 100px;
+}
+
+.WeatherBlock .Wind {
+    padding-top: 1.6em;
+    font-size: 1em;
+}
+
+.Main .LastUpdate {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 footer {
-    display: block;
+    padding: 0 10%;
+}
+
+@media (max-width: 550px) {
+    header {
+        padding: 1em 0;
+    }
+    .Main {
+        padding: 0;
+    }
+    footer {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        padding: 1em 20%;
+    }
+    .Main {
+        padding: 0 20%;
+    }
+    footer {
+        padding: 0 20%;
+    }
 }

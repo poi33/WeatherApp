@@ -17,7 +17,8 @@
 
 <body>
     <header>
-        <h1>Weather app</h1>
+        <h1>Enonic</h1>
+        <h2>Office weather</h2>
     </header>
     <div class="Main">
         <div class="Headline">
@@ -31,12 +32,14 @@
             <!-- Content from JS requst -->
         </div>
         <div class="LastUpdate">
-            <div>Last updated at <time id="FetchTime">--:--</time></div>
+            Last updated at
+            <time id="FetchTime">--:--</time>
         </div>
     </div>
     <footer>
         <div>
-            Weather icons by <a href="https://www.freepik.com/free-vector/coloured-weather-icons-collection_895655.htm">Titusurya</a>
+            Weather icons by
+            <a href="https://www.freepik.com/free-vector/coloured-weather-icons-collection_895655.htm">Titusurya</a>
         </div>
     </footer>
     <!--Template holder-->
@@ -44,11 +47,9 @@
         <div id class="WeatherBlock">
             <div class="City">
                 <h2></h2>
-                <div class="Temperature"></div>
-                <figure class="Icon">
-                    <img class="WeatherIcon" src="" />
-                    <figcaption></figcaption>
-                </figure>
+                <img class="WeatherIcon" src="" />
+                <div class="Temperature Text"></div>
+                <div class="Wind Text"></div>
             </div>
         </div>
     </div>
