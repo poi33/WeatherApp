@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Weather widget</title>
     <meta name="author" content="Persijn Kwekkeboom">
     <meta name="description" content="A small weather app create for my developer test">
-    <meta name="keywords" content="Weather, Enonic, Test">
+    <meta name="keywords" content="Weather, Enonic, DeveloperTest">
     <link rel="shortcut icon" href="favicon.ico" type="image">
     <link rel="stylesheet" href="./CSS/MainStyle.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/Global.css" type="text/css">
     <script type="text/javascript" src="./Lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./Lib/moment.js"></script>
     <script type="text/javascript" src="./JS/WeatherData.js"></script>
 </head>
 
@@ -18,10 +20,38 @@
         <h1>Weather app</h1>
     </header>
     <div class="Main">
-        <div id="WeatherData">Lets request some weather data</div>
-        <div id="WeatherError" class="noShow">Error</div>
+        <div class="Headline">
+            <span class="Loading">
+                <div></div>
+                <div></div>
+                <div></div>
+            </span>
+        </div>
+        <div id="WeatherContent">
+            <!-- Content from JS requst -->
+        </div>
+        <div class="LastUpdate">
+            <div>Last updated at <time id="FetchTime">--:--</time></div>
+        </div>
     </div>
-    <footer>Last updated: <time id="LastFetchTime">--:--</time></footer>
+    <footer>
+        <div>
+            Weather icons by <a href="https://www.freepik.com/free-vector/coloured-weather-icons-collection_895655.htm">Titusurya</a>
+        </div>
+    </footer>
+    <!--Template holder-->
+    <div id="Templates" class="Hidden">
+        <div id class="WeatherBlock">
+            <div class="City">
+                <h2></h2>
+                <div class="Temperature"></div>
+                <figure class="Icon">
+                    <img class="WeatherIcon" src="" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
